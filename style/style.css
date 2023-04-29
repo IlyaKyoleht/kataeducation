@@ -1,0 +1,234 @@
+@font-face {
+  font-family: TT Lakes;
+  src: url(/font/TTLakes-Bold.woff);
+}
+@font-face {
+  font-family: TT Lakes Demi;
+  src: url(/font/TTLakes-Medium.woff);
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+  background-color: #f8f8f8;
+  min-width: 320px;
+}
+.head__upperMenu {
+  height: 88px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d9fff5;
+  background-color: white;
+}
+.head__burger {
+  order: 1;
+  margin-left: 16px;
+}
+
+.head__logo {
+  order: 2;
+  margin-right: auto;
+  margin-left: 16px;
+}
+.head__line {
+  order: 3;
+  position: absolute;
+  margin-left: 190px;
+}
+.head__repair {
+  order: 6;
+  margin-right: 16px;
+}
+.head__checkstatus {
+  order: 7;
+  margin-right: 16px;
+}
+.head__hidden {
+  display: none;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+}
+
+.main__title {
+  font-family: 'TT Lakes';
+  font-size: 28px;
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 0;
+  padding-right: 16px;
+  padding-left: 8px;
+  padding-top: 24px;
+  height: 40px;
+}
+
+.main__hidden {
+  display: none;
+}
+
+.main__title::before {
+  content: ' ';
+  background: #41f6d7;
+  width: 4px;
+  height: 40px;
+  left: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+}
+
+.main__menu {
+  display: flex;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.scrollline__item {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #7e7e82;
+  background-color: #f8f8f8;
+  border: 0;
+  margin-left: 15px;
+  font-family: 'TT Lakes Demi';
+  padding: 5px;
+  text-align: center;
+}
+
+.scrollline__item:hover {
+  border: 1px solid #b8ffec;
+  border-radius: 6px;
+  background-color: white;
+  padding: 4px;
+  margin-left: 15px;
+}
+
+.main__text {
+  text-align: start;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-family: 'TT Lakes Demi';
+  color: #1b1c21;
+  font-size: 14px;
+}
+.main__section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main__readmore {
+  margin-left: 20px;
+  padding: 0;
+  border: none;
+  background: none;
+  position: relative;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'TT Lakes Demi';
+  cursor: pointer;
+}
+.main__readmorebutton {
+  color: #1b1c21;
+  padding-right: 10px;
+}
+
+.main__img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .head__burger {
+    margin-left: 24px;
+  }
+
+  .head__logo {
+    margin-left: 48px;
+  }
+
+  .head__line {
+    margin-left: 87px;
+  }
+
+  .head__checkstatus {
+    margin-right: 40px;
+  }
+
+  .head__hidden {
+    vertical-align: auto;
+    display: flex;
+    margin-right: 16px;
+    order: 4;
+  }
+  .head__line2 {
+    order: 5;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 15px;
+  }
+  .head__profile {
+    margin-left: 16px;
+  }
+  .head__chat {
+    margin-left: 16px;
+  }
+
+  .main__section {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .main__readmorebutton {
+    margin: 0;
+    padding: 0;
+  }
+  .main__text::after {
+    content: 'Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера';
+    display: block;
+    padding-top: 20px;
+  }
+}
+@media (min-width: 1120px) {
+  .head__upperMenu {
+    display: none;
+  }
+  .main__text::after {
+    content: 'Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.';
+    display: block;
+    padding-top: 20px;
+  }
+  .main__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main__menu {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+  .main__hidden {
+    display: flex;
+  }
+  .main__repair,
+  .main__checkstatus {
+    align-self: center;
+    margin-right: 15px;
+  }
+  .repair-text,
+  .checkstatus-text {
+    justify-content: center;
+    margin-right: 15px;
+    text-align: center;
+    font-family: 'TT Lakes Demi';
+    font-size: 16px;
+  }
+  .main__repair {
+    margin-right: 30px;
+  }
+}
