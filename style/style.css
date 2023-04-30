@@ -1,10 +1,10 @@
 @font-face {
   font-family: TT Lakes;
-  src: url(../font/TTLakes-Bold.woff);
+  src: url(/font/TTLakes-Bold.woff);
 }
 @font-face {
   font-family: TT Lakes Demi;
-  src: url(../font/TTLakes-Medium.woff);
+  src: url(/font/TTLakes-Medium.woff);
 }
 
 body {
@@ -138,6 +138,10 @@ body {
   padding-right: 10px;
 }
 
+.main__about {
+  margin-bottom: 20px;
+}
+
 .main__img {
   width: 100%;
   margin-left: auto;
@@ -182,7 +186,9 @@ body {
   .main__section {
     display: flex;
     flex-wrap: nowrap;
+    margin-top: 30px;
   }
+
   .main__readmorebutton {
     margin: 0;
     padding: 0;
