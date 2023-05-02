@@ -219,8 +219,9 @@ body {
   }
   .main__menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-right: 20px;
+    overflow-x: visible;
   }
   .main__hidden {
     display: flex;
