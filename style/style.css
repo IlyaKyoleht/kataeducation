@@ -181,7 +181,7 @@ body {
     margin-left: 16px;
   }
   .main__title {
-    margin-left: 28px;
+    margin-left: 24px;
   }
   .main__menu {
     margin-left: 24px;
@@ -221,7 +221,7 @@ body {
     align-items: center;
   }
   .main__title {
-    margin-left: 36px;
+    margin-left: 32px;
   }
   .main__menu {
     display: flex;
@@ -253,8 +253,12 @@ body {
   .main__menu {
     display: flex;
     margin-left: 32px;
+    margin-right: 37px;
     overflow-x: visible;
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .main__hidden {
+    margin-right: 37px;
   }
 }
-
