@@ -59,10 +59,9 @@ body {
   letter-spacing: -0.2px;
   color: #1b1c21;
   font-weight: bold;
-  margin-left: 10px;
+  margin-left: 16px;
   margin-top: 0;
   padding-right: 16px;
-  padding-left: 8px;
   padding-top: 24px;
   height: 40px;
 }
@@ -86,6 +85,7 @@ body {
   display: flex;
   white-space: nowrap;
   overflow-x: scroll;
+  margin-left: 12px;
 }
 
 .scrollline__item {
@@ -95,18 +95,16 @@ body {
   color: #7e7e82;
   background-color: #f8f8f8;
   border: 0;
-  margin-left: 15px;
   font-family: 'TT Lakes Demi';
-  padding: 5px;
+  padding: 4px 20px;
   text-align: center;
+  border: 1px solid transparent;
 }
 
 .scrollline__item:hover {
-  border: 1px solid #b8ffec;
+  border-color: #b8ffec;
   border-radius: 6px;
   background-color: white;
-  padding: 4px;
-  margin-left: 15px;
 }
 
 .main__text {
@@ -182,7 +180,12 @@ body {
   .head__chat {
     margin-left: 16px;
   }
-
+  .main__title {
+    margin-left: 28px;
+  }
+  .main__menu {
+    margin-left: 24px;
+  }
   .main__section {
     display: flex;
     flex-wrap: nowrap;
@@ -217,11 +220,14 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+  .main__title {
+    margin-left: 36px;
+  }
   .main__menu {
     display: flex;
-    justify-content: space-evenly;
-    margin-right: 20px;
+    margin-left: 32px;
     overflow-x: visible;
+    flex-wrap: wrap;
   }
   .main__hidden {
     display: flex;
@@ -243,3 +249,12 @@ body {
     margin-right: 30px;
   }
 }
+@media (min-width: 1120px) {
+  .main__menu {
+    display: flex;
+    margin-left: 32px;
+    overflow-x: visible;
+    justify-content: space-between;
+  }
+}
+
